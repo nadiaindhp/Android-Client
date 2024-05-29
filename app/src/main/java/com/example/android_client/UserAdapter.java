@@ -28,6 +28,8 @@ public class UserAdapter extends
         User user = userList.get(position);
         holder.textViewName.setText(user.getName());
         holder.textViewEmail.setText(user.getEmail());
+        holder.textViewHobi.setText(user.getHobi());
+        holder.textViewAlamat.setText(user.getAlamat());
     }
     @Override
     public int getItemCount() {
@@ -36,10 +38,14 @@ public class UserAdapter extends
     public static class UserViewHolder extends RecyclerView.ViewHolder {
         TextView textViewName;
         TextView textViewEmail;
+        TextView textViewHobi;
+        TextView textViewAlamat;
         public UserViewHolder(@NonNull View itemView) {
             super(itemView);
             textViewName = itemView.findViewById(R.id.textViewName);
             textViewEmail = itemView.findViewById(R.id.textViewEmail);
+            textViewHobi = itemView.findViewById(R.id.textViewHobi);
+            textViewAlamat = itemView.findViewById(R.id.textViewAlamat);
         }
     }
 }

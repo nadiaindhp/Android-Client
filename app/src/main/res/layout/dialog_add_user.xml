@@ -15,4 +15,14 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Email" />
+    <EditText
+        android:id="@+id/editTextHobi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Hobi" />
+    <EditText
+        android:id="@+id/editTextAlamat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Alamat" />
 </LinearLayout>
